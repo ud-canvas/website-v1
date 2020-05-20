@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ud-website-v1"
+    }
+  },
+  "defaultProject": "ud-website-v1",
+  "cli": {
+    "analytics": false
+  }
 }
