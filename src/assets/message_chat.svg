@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="757.59" height="594.927" viewBox="0 0 757.59 594.927">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.01" stop-color="gray" stop-opacity="0.251"/>
+      <stop offset="0.54" stop-color="gray" stop-opacity="0.122"/>
+      <stop offset="1" stop-color="gray" stop-opacity="0.102"/>
+    </linearGradient>
+  </defs>
+  <g id="message_chat" transform="translate(-0.05)">
+    <path id="Path_155" data-name="Path 155" d="M998.41,290.82H566.95c-42.38,0-76.74,34.69-76.74,77.48V636.48a36.26,36.26,0,0,0,36.09,36.44h274c9.12,31.56,32,75.06,89.64,94.45l-16.27-94.45H998.41a36.26,36.26,0,0,0,36.09-36.44V327.26a36.26,36.26,0,0,0-36.09-36.44Z" transform="translate(-276.861 -172.443)" fill="url(#linear-gradient)"/>
+    <path id="Path_156" data-name="Path 156" d="M991.15,299.86H572.35a74.49,74.49,0,0,0-74.49,74.49V632.17a35,35,0,0,0,35,35H798.83c8.85,30.34,31.09,72.16,87,90.8L870,667.2H991.1a35,35,0,0,0,35-35V334.89A35,35,0,0,0,991.15,299.86Z" transform="translate(-276.861 -172.443)" fill="#fafafa"/>
+    <rect id="Rectangle_26" data-name="Rectangle 26" width="216.47" height="27.06" transform="translate(415.311 218.819)" fill="#e0e0e0"/>
+    <rect id="Rectangle_27" data-name="Rectangle 27" width="81.18" height="27.06" transform="translate(545.105 265.506)" fill="#e0e0e0"/>
+    <rect id="Rectangle_28" data-name="Rectangle 28" width="160.08" height="27.06" transform="translate(467.567 312.183)" fill="#e0e0e0"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="196.32" height="27.06" transform="translate(431.614 358.87)" fill="#e0e0e0"/>
+    <rect id="Rectangle_30" data-name="Rectangle 30" width="103.51" height="27.06" transform="translate(520.253 405.547)" fill="#e0e0e0"/>
+    <path id="Path_157" data-name="Path 157" d="M201.38,132.63H670.79c19.82,0,35.88,16.29,35.88,36.39V477.85c0,20.1-16.06,36.39-35.88,36.39H398.38c-9.07,31.52-31.85,75-89.13,94.33l16.18-94.33h-124c-19.82,0-35.88-16.29-35.88-36.39V169A36.055,36.055,0,0,1,201.38,132.63Z" transform="translate(-165.5 -132.63)" fill="url(#linear-gradient)"/>
+    <path id="Path_158" data-name="Path 158" d="M206.77,142.1H665a35,35,0,0,1,35,35V474.41a35,35,0,0,1-35,35H399.09c-8.85,30.34-31.09,72.16-87,90.8l15.79-90.8H206.77a35,35,0,0,1-35-35V177.13a35,35,0,0,1,35-35.03Z" transform="translate(-165.5 -132.63)" fill="#fff"/>
+    <rect id="Rectangle_31" data-name="Rectangle 31" width="216.47" height="27.06" transform="translate(134.492 66.61)" fill="#115ea0"/>
+    <rect id="Rectangle_32" data-name="Rectangle 32" width="81.18" height="27.06" transform="translate(140.3 108.923)" fill="#f2a6e1"/>
+    <rect id="Rectangle_33" data-name="Rectangle 33" width="160.08" height="27.06" transform="translate(138.767 155.601)" fill="#ffae1b"/>
+    <rect id="Rectangle_34" data-name="Rectangle 34" width="196.32" height="27.06" transform="translate(138.4 202.288)" fill="#d8eeff"/>
+    <rect id="Rectangle_35" data-name="Rectangle 35" width="103.51" height="27.06" transform="translate(142.78 248.965)" fill="#6c63ff"/>
+  </g>
+</svg>

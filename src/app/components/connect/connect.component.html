@@ -1,0 +1,91 @@
+<div class="background">
+  <img class="bg-image" src="assets/connect-bg.png" alt="Image">
+
+  <div class="body">
+    <div class="container">
+      <div class="pink-icons-disc">
+        <div class="ios-mail mail-icon">
+          <img src="assets/mail-icons/ios-mail.svg" alt="Icon">
+        </div>
+        <div class="mail-open mail-icon">
+          <img src="assets/mail-icons/mail-open.svg" alt="Icon">
+        </div>
+        <div class="md-mail-open mail-icon">
+          <img src="assets/mail-icons/md-mail-open.svg" alt="Icon">
+        </div>
+        <div class="mail-bulk mail-icon">
+          <img src="assets/mail-icons/mail-bulk.svg" alt="Icon">
+        </div>
+      </div>
+      <div class="message-chat-image">
+        <img src="assets/message_chat.svg" alt="Message Chat Image">
+      </div>
+      <div class="phone-call">
+        <img src="assets/phone-call.svg" alt="Phone Call Icon">
+      </div>
+      <div class="say-hello">
+        <div class="content">
+          <div class="title">
+            Say Hello
+          </div>
+          <table class="form-table">
+            <tr>
+              <td class="td-title"><label for="name">Name</label></td>
+              <td class="td-arrow">
+                <ng-template [ngIf]="false" [ngIfElse]="longArrowIcon">
+                  Long Arrow Icon
+                </ng-template>
+              </td>
+              <td class="td-input"><input type="text" id="name" [(ngModel)]="name"></td>
+            </tr>
+            <tr>
+              <td class="td-title"><label for="email">Email</label></td>
+              <td class="td-arrow">
+                <ng-template [ngIf]="false" [ngIfElse]="longArrowIcon">
+                  Long Arrow Icon
+                </ng-template>
+              </td>
+              <td class="td-input"><input type="text" id="email" [(ngModel)]="emailAddress"></td>
+            </tr>
+            <tr>
+              <td class="td-title"><label for="message">Message</label></td>
+              <td class="td-arrow">
+                <ng-template [ngIf]="false" [ngIfElse]="longArrowIcon">
+                  Long Arrow Icon
+                </ng-template>
+              </td>
+              <td class="td-input"><input type="text" id="message" [(ngModel)]="message"></td>
+            </tr>
+          </table>
+          <button class="send-btn" (click)="sendMail()">
+            Send
+            <span class="sized-box"></span>
+            <ng-template [ngIf]="false" [ngIfElse]="sendIcon">
+              Send Icon
+            </ng-template>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #longArrowIcon>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <path
+      fill="currentColor"
+      d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z">
+    </path>
+  </svg>
+</ng-template>
+
+<ng-template #sendIcon>
+  <svg xmlns="http://www.w3.org/2000/svg" width="33.621" height="33.621" viewBox="0 0 33.621 33.621">
+    <g id="Icon_feather-send" data-name="Icon feather-send" transform="translate(-1.5 -0.879)">
+      <path id="Path_121" data-name="Path 121" d="M33,3,16.5,19.5" fill="none" stroke="#000" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_122" data-name="Path 122" d="M33,3,22.5,33l-6-13.5L3,13.5Z" fill="none" stroke="#000"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </svg>
+</ng-template>
