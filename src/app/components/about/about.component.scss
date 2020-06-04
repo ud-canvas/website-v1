@@ -63,6 +63,33 @@
       box-shadow: 0 0 20px rgba(188, 118, 0, 1);
       background-color: white;
 
+      cursor: pointer;
+
+      &:hover {
+        animation: rotate 400ms ease-in-out both;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg) scale(1.1);
+        }
+        20% {
+          transform: rotate(-1deg) scale(1.1);
+        }
+        40% {
+          transform: rotate(2deg) scale(1.1);
+        }
+        60% {
+          transform: rotate(-3deg) scale(1.1);
+        }
+        80% {
+          transform: rotate(2deg) scale(1.1);
+        }
+        100% {
+          transform: rotate(0deg) scale(1.1);
+        }
+      }
+
       .card-img {
         height: 50%;
 
