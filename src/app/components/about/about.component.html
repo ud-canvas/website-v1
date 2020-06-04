@@ -1,0 +1,33 @@
+<div class="background">
+  <img class="bg-image" src="assets/about-bg.png" alt="Image">
+
+  <div class="body">
+    <div class="container">
+      <div class="cards">
+        <div class="row" *ngFor="let row of cards">
+          <div class="card" *ngFor="let card of row">
+            <div class="card-img">
+              <div class="card-img-bg">
+                <img [src]="card.imageSrc" alt="Icon">
+              </div>
+            </div>
+            <div class="card-title">
+              {{ card.title }}
+            </div>
+            <div class="card-body">
+              {{ card.body }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gif-container">
+        <div class="gif-title">
+          My Methodology
+        </div>
+        <div class="gif">
+          <img src="assets/about-gif.gif" alt="About Gif">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

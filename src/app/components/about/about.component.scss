@@ -1,0 +1,142 @@
+.background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 82%;
+    height: 80%;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    .cards,
+    .gif-container {
+      width: 39%;
+      height: 100%;
+      position: relative;
+    }
+  }
+}
+
+.cards {
+  min-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .row {
+    width: 100%;
+    height: 42%;
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .card {
+      width: 40%;
+      height: 100%;
+      position: relative;
+
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(188, 118, 0, 1);
+      background-color: white;
+
+      .card-img {
+        height: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card-img-bg {
+          width: 80px;
+          height: 80px;
+
+          border: 1px solid #ddd;
+          box-shadow: 0 -2px 5px #ccc;
+          border-radius: 50%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 40px;
+          }
+        }
+      }
+
+      .card-title {
+        text-align: center;
+        font-weight: bold;
+        color: #115EA0;
+      }
+
+      .card-body {
+        width: 85%;
+        margin: 6px auto 0;
+
+        font-size: 12px;
+        font-weight: bold;
+        color: #7C7171;
+        text-align: justify-all;
+        word-break: break-word;
+      }
+    }
+  }
+}
+
+.gif-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .gif-title {
+    width: 70%;
+    height: 15%;
+    margin: auto;
+
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #bbb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+    font-weight: bold;
+    color: #115EA0;
+  }
+
+  .gif {
+    width: 100%;
+    height: 80%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
