@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -33,9 +33,12 @@ export class AboutComponent implements OnInit {
     ]
   ];
 
-  constructor() { }
+  blogGifUrl = 'https://i.imgur.com/Ft64Fsv.gif?vv=' + Math.random();
+
+  constructor() {  }
 
   ngOnInit(): void {
   }
-
 }
+
+
