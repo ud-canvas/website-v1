@@ -1,3 +1,8 @@
 <div class="container">
-
+  <div class="arrow left-arrow" *ngIf="prevLink" [routerLink]="prevLink">
+    <img src="assets/play_button_left.svg" alt="Previous">
+  </div>
+  <div class="arrow right-arrow" *ngIf="nextLink" [routerLink]="nextLink">
+    <img src="assets/play_button_right.svg" alt="Next">
+  </div>
 </div>

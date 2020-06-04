@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-route-nav-btn',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./route-nav-btn.component.scss']
 })
 export class RouteNavBtnComponent implements OnInit {
+  @Input() prevLink: string = null;
+  @Input() nextLink: string = null;
 
   constructor() { }
 
