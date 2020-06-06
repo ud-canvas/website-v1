@@ -65,6 +65,10 @@ nav {
     border: 3px solid rgba($shade, $shade, $shade, 0.2);
     border-radius: 3vh;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: white;
 
     cursor: pointer;
@@ -162,11 +166,11 @@ nav {
 }
 
 .info-card {
-  width: 280px;
-  height: 200px;
+  width: 390px;
+  height: 250px;
   position: absolute;
   right: 10vw;
-  top: 35vh;
+  top: 32vh;
 
   cursor: pointer;
   overflow: hidden;
@@ -176,12 +180,12 @@ nav {
   transition: all $animation-duration ease-in-out;
 
   .img {
-    $size: 55px;
+    $size: 75px;
     width: $size + 5px;
     height: $size;
     position: absolute;
-    right: 7%;
-    bottom: 23%;
+    right: 9%;
+    bottom: 20%;
 
     border-radius: 10px;
   }
@@ -191,7 +195,7 @@ nav {
     left: 5%;
     top: 55%;
 
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     color: #707070;
 
@@ -203,7 +207,7 @@ nav {
     left: 5%;
     bottom: 24%;
 
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #bbb;
 
@@ -223,7 +227,7 @@ nav {
     align-items: center;
 
     color: #FCBF58;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
 
     transition: all $animation-duration ease-in-out;
@@ -248,7 +252,7 @@ nav {
     box-shadow: 0 0 20px lightgray;
 
     .title {
-      top: 39%;
+      top: 42%;
     }
 
     .work-description {
@@ -277,25 +281,25 @@ nav {
       top: 0;
       right: 0;
       width: 20%;
-      transform: translateY(-16px) rotateZ(-16deg);
+      transform: translateY(-20px) rotateZ(-16deg);
     }
     40% {
       top: 0;
       right: 0;
       width: 40%;
-      transform: translateY(-12px) rotateZ(-12deg);
+      transform: translateY(-20px) rotateZ(-12deg);
     }
     60% {
       top: 0;
       right: 0;
       width: 60%;
-      transform: translateY(-10px) rotateZ(-8deg);
+      transform: translateY(-20px) rotateZ(-8deg);
     }
     80% {
       top: 0;
       right: 0;
       width: 80%;
-      transform: translateY(-10px) rotateZ(-4deg);
+      transform: translateY(-20px) rotateZ(-4deg);
     }
     100% {
       right: 0;
@@ -314,25 +318,25 @@ nav {
       top: 0;
       right: 0;
       width: 80%;
-      transform: translateY(-10px) rotateZ(-4deg);
+      transform: translateY(-20px) rotateZ(-4deg);
     }
     40% {
       top: 0;
       right: 0;
       width: 60%;
-      transform: translateY(-10px) rotateZ(-8deg);
+      transform: translateY(-20px) rotateZ(-8deg);
     }
     60% {
       top: 0;
       right: 0;
       width: 40%;
-      transform: translateY(-12px) rotateZ(-12deg);
+      transform: translateY(-20px) rotateZ(-12deg);
     }
     80% {
       top: 0;
       right: 0;
       width: 20%;
-      transform: translateY(-16px) rotateZ(-16deg);
+      transform: translateY(-20px) rotateZ(-16deg);
     }
     100% {
       top: 0;
