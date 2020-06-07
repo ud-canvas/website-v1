@@ -1,17 +1,19 @@
 {
     "projects":[
         {
-            "title":"Music Website Landing Page",
-            "longTitle":"Music Website Landing Page - Using FIGMA | Adobe Photoshop",
-            "imageLink":"https://i.imgur.com/ILVRQ9w.png",
-            "videoId":"ne-wsIk32qg"
+            "title":"Instagram App UI Design",
+            "longTitle":"Instagram App UI Design - using FIGMA with PROTOTYPING",
+            "imageLink":"https://i.imgur.com/E7csCdf.png",
+            "videoId":"gZTo-2coK9s" 
+         
         },
         {
-            "title":"SaaS Mobile App Design - IOS APP Design",
-            "longTitle":"SaaS Mobile App Design - IOS APP Design | Using FIGMA",
-            "imageLink":"https://i.imgur.com/9RWS6up.png",
-            "videoId":"Q9or60atShg"
-        },
+           "title":"Cafeteria app UI Design",
+            "longTitle":"Cafeteria app UI Design - using FIGMA with PROTOTYPING",
+            "imageLink":"https://i.imgur.com/4Ierutn.png",
+            "videoId":"XR_jg7X8Lps"
+        }, 
+          
         {
             "title":"Shopping  Website Landing Page UI Design",
             "longTitle":"Clothing store | Shopping  Website Landing Page UI Design - using FIGMA | Adobe Photoshop",
@@ -61,16 +63,16 @@
             "videoId":"5RchkBxmxFc"
         },
         {
-            "title":"Instagram App UI Design",
-            "longTitle":"Instagram App UI Design - using FIGMA with PROTOTYPING",
-            "imageLink":"https://i.imgur.com/E7csCdf.png",
-            "videoId":"gZTo-2coK9s"
+            "title":"Music Website Landing Page",
+            "longTitle":"Music Website Landing Page - Using FIGMA | Adobe Photoshop",
+            "imageLink":"https://i.imgur.com/ILVRQ9w.png",
+            "videoId":"ne-wsIk32qg"
         },
         {
-            "title":"Cafeteria app UI Design",
-            "longTitle":"Cafeteria app UI Design - using FIGMA with PROTOTYPING",
-            "imageLink":"https://i.imgur.com/4Ierutn.png",
-            "videoId":"XR_jg7X8Lps"
+            "title":"SaaS Mobile App Design - IOS APP Design",
+            "longTitle":"SaaS Mobile App Design - IOS APP Design | Using FIGMA",
+            "imageLink":"https://i.imgur.com/9RWS6up.png",
+            "videoId":"Q9or60atShg"
         },
         {
             "title":"3d bottle / illustration",
