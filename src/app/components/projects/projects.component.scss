@@ -1,0 +1,159 @@
+@import "src/theme";
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  overflow-x: hidden;
+}
+
+nav {
+  height: 10vh;
+
+  border-bottom: 2px solid #ccc;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: bold;
+    color: $primary-text-color;
+
+    .title {
+      font-size: 24px;
+    }
+
+    .btn-back {
+      padding: 3px 5px;
+
+      border: 1px solid transparent;
+
+      font-size: 20px;
+      font-weight: bold;
+
+      transition: transform 200ms ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.02);
+        border: 1px solid $primary-text-color;
+      }
+    }
+  }
+}
+
+.projects {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 220px);
+  grid-row-gap: 25px;
+  grid-column-gap: 35px;
+}
+
+.project {
+  height: 250px;
+  position: relative;
+
+  border-radius: 15px;
+  box-shadow:
+    -2px -8px 10px #ccc,
+    0 2px 3px #ddd;
+
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .image {
+    width: 70%;
+    height: 100px;
+    margin: 10% auto 0;
+    position: relative;
+
+    border: 1px solid #bbb;
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .title {
+    width: 80%;
+    margin: 10% auto 0;
+
+    color: $primary-text-color;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .btn-view {
+    width: 60%;
+    height: 25px;
+    position: absolute;
+    margin-left: 50%;
+    bottom: 10px;
+
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $primary-text-color;
+    color: white;
+
+    cursor: pointer;
+    transform: translateX(-50%);
+
+    &:hover {
+      background-color: lighten($primary-text-color, 10);
+    }
+  }
+}
+
+.modal {
+  position: relative;
+
+  .title {
+    width: 80%;
+    margin: 20px auto;
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: $primary-text-color;
+  }
+
+  .body {
+    width: 70%;
+    height: 75%;
+    margin: auto;
+
+    iframe {
+      border: 1px solid #ddd;
+    }
+  }
+}

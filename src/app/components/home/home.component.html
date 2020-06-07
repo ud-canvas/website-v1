@@ -6,28 +6,7 @@
       <nav>
         <div></div>
         <div class="links">
-          <div class="link projects-container"
-               (mouseover)="projectsIsHovered()"
-               (mouseleave)="projectsIsNotHovered()"
-          >
-            <div class="projects">
-              Projects
-              <ng-template [ngIf]="false" [ngIfElse]="dropDownIcon"></ng-template>
-            </div>
-            <div class="dropdown"
-                 [ngStyle]="{
-                  maxHeight: getMaxHeight()
-               }"
-            >
-              <div class="dropdown-item dropdown-sized"></div>
-              <a
-                class="dropdown-item"
-                target="_blank"
-                *ngFor="let project of projects"
-                [href]="project.url"
-              >{{ project.title }}</a>
-            </div>
-          </div>
+          <div class="link projects" routerLink="/projects">Projects</div>
           <a class="link resume" target="_blank" rel="nofollow" [href]="resumeUrl">
             Resume
           </a>
