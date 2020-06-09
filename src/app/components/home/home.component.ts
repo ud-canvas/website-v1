@@ -9,6 +9,7 @@ import { environment } from 'src/environments/environment';
 export class HomeComponent implements OnInit {
   resumeUrl = environment.resume;
   dribbleUrl = environment.dribbleLink;
+  youtubeUrl = environment.youtubeLink;
   projects = [
     {
       title: 'Title 1',
