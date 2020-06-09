@@ -23,7 +23,7 @@ body {
 .modal {
   position: relative;
   height: 80%;
-  min-width: 500px;
+  //min-width: 500px;
 
   background-color: white;
 }
@@ -42,5 +42,11 @@ body {
 
   &:hover {
     border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal {
+    width: 98% !important;
   }
 }

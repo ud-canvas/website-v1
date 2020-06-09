@@ -157,3 +157,27 @@ nav {
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .modal {
+    .body {
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal {
+    .body {
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .modal {
+    .body {
+      height: 200px;
+    }
+  }
+}
