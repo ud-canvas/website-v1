@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-connect',
@@ -10,7 +10,19 @@ export class ConnectComponent implements OnInit {
   emailAddress = '';
   message = '';
 
-  constructor() { }
+  screenHeight: number;
+  screenWidth: number;
+
+  constructor() {
+    this.getScreenSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?) {
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
+    console.log(this.screenHeight, this.screenWidth);
+  }
 
   ngOnInit(): void {
   }

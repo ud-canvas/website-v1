@@ -3,7 +3,6 @@
 .background {
   width: 100%;
   height: 90%;
-  min-width: 1000px;
   max-height: 900px;
   position: relative;
 }
@@ -252,4 +251,88 @@
 
   color: $primary-text-color;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .say-hello {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .say-hello {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .message-chat-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .pink-icons-disc,
+  .phone-call {
+    display: none;
+  }
+
+  .say-hello {
+    margin: 15% auto 0;
+
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .say-hello {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .background {
+    height: 100vh;
+  }
+
+  .say-hello {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    border-radius: 0;
+
+    .content {
+      .title {
+        font-size: 35px;
+        font-weight: normal;
+      }
+
+      .send-btn {
+        font-size: 22px;
+      }
+
+      .form-table {
+        tr {
+          height: 50px;
+          border-radius: 15px;
+
+          .td-title,
+          .td-arrow {
+            display: none;
+          }
+
+          .td-input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: none;
+  }
 }
