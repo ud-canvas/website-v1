@@ -124,6 +124,12 @@
   }
 }
 
+.navigator div {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
 .gif-container {
   display: flex;
   flex-direction: column;
@@ -160,6 +166,10 @@
 }
 
 .placeholder {
+  display: none;
+}
+
+.display-below-1000px {
   display: none;
 }
 
@@ -230,6 +240,14 @@
   }
 
   .gif {
+    display: none;
+  }
+
+  .display-below-1000px {
+    display: block;
+  }
+
+  .display-above-1000px {
     display: none;
   }
 }

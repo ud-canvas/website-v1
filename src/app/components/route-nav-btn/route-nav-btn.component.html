@@ -1,4 +1,10 @@
-<div class="container">
+<div class="container"
+     [ngStyle]="{
+        position: position,
+        bottom: bottom,
+        right: right
+     }"
+>
   <div class="arrow left-arrow" *ngIf="prevLink" [routerLink]="prevLink">
     <img src="assets/play_button_left.svg" alt="Previous">
   </div>
