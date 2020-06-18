@@ -82,12 +82,29 @@
 </ng-template>
 
 <div class="layout">
+  <div class="hamburger-menu"
+       [ngStyle]="{
+        width: hamburgerMenuWidth,
+        overflow: hamburgerMenuWidth === '0' ? 'hidden' : 'auto'
+       }"
+  >
+    <div class="cross" (click)="closeHamburger()">
+      X
+    </div>
+    <div class="content">
+      <a target="_blank" rel="nofollow" [href]="resumeUrl">
+        RESUME
+      </a>
+      <div routerLink="/projects">PROJECTS</div>
+      <div routerLink="/connect">CONTACT</div>
+    </div>
+  </div>
   <div class="nav">
     <div class="content">
       <div class="logo">
         <img src="assets/logo.svg" alt="Logo Icon">
       </div>
-      <div class="hamburger">
+      <div class="hamburger" (click)="openHamburger()">
         <ng-template [ngIf]="true" [ngIfThen]="hamburger"></ng-template>
       </div>
     </div>

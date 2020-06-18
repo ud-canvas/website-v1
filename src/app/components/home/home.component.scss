@@ -461,6 +461,54 @@ nav {
       }
     }
   }
+
+  .hamburger-menu {
+    height: 100%;
+
+    position: fixed;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    z-index: 2;
+    transition: width 250ms ease-in-out;
+
+    .content {
+      height: 50%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      font-size: 28px;
+      font-weight: bold;
+
+      * {
+        text-decoration: none;
+        cursor: pointer;
+
+        &:visited,
+        &:focus {
+          color: black;
+        }
+      }
+    }
+
+    .cross {
+      position: absolute;
+      right: 15px;
+      top: 12px;
+
+      font-size: 28px;
+      font-weight: bold;
+
+      cursor: pointer;
+    }
+  }
 }
 
 .blank-line {

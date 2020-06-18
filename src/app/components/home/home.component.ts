@@ -28,25 +28,21 @@ export class HomeComponent implements OnInit {
       url: 'https://example.com'
     },
   ];
-  isProjectsHovered = false;
   isMoreInfoHovered = false;
 
+  hamburgerMenuWidth = '0';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  getMaxHeight() {
-    return this.isProjectsHovered ? 30 * this.projects.length + 15 + 'px' : '0';
+  openHamburger() {
+    this.hamburgerMenuWidth = '100%';
   }
 
-  projectsIsHovered() {
-    this.isProjectsHovered = true;
-  }
-
-  projectsIsNotHovered() {
-    this.isProjectsHovered = false;
+  closeHamburger() {
+    this.hamburgerMenuWidth = '0';
   }
 
   moreInfoIsHovered() {
