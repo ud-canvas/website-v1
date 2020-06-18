@@ -50,9 +50,8 @@
       </div>
     </div>
   </div>
+  <app-route-nav-btn nextLink="/about"></app-route-nav-btn>
 </div>
-
-<app-route-nav-btn nextLink="/about"></app-route-nav-btn>
 
 <ng-template #dropDownIcon>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -79,5 +78,67 @@
 <ng-template #youtube>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
     <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+  </svg>
+</ng-template>
+
+<div class="layout">
+  <div class="nav">
+    <div class="content">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo Icon">
+      </div>
+      <div class="hamburger">
+        <ng-template [ngIf]="true" [ngIfThen]="hamburger"></ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="introduction">
+    <p>Hi I am</p>
+    <div class="blank-line"></div>
+    <h3>Umesh Daftari</h3>
+    <div class="blank-line" *ngFor="let _ of [0, 0, 0, 0]"></div>
+    <h4>Pros:</h4>
+    <ul class="root-list">
+      <li>
+        <div class="i-am-container">
+          <div class="i-am">I am</div>
+          <div class="titles">
+            <div>&nbsp;- UI/UX Designer</div>
+            <div>&nbsp;- Digital Marketer</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        I always come up with some idea which is difficult to
+        execute. xd
+      </li>
+    </ul>
+    <div class="blank-line" *ngFor="let _ of [0, 0]"></div>
+    <h4>Cons:</h4>
+    <ul class="root-list">
+      <li>
+        I am a Computer Science Grad.
+      </li>
+    </ul>
+  </div>
+  <div class="connect-btn-container">
+    <div class="connect-btn" routerLink="/connect">Connect</div>
+  </div>
+  <div class="footer">
+    <div class="content">
+      <img src="assets/map-marker-alt-solid.svg" alt="pin">
+      <p>INDIA</p>
+    </div>
+  </div>
+  <app-route-nav-btn
+    nextLink="/about"
+    position="absolute"
+    right="0"
+  ></app-route-nav-btn>
+</div>
+
+<ng-template #hamburger>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" preserveAspectRatio="none">
+    <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
   </svg>
 </ng-template>

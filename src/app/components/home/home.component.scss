@@ -3,7 +3,7 @@
 .background {
   width: 100%;
   height: 100%;
-  min-width: 1000px;
+  //min-width: 1000px;
   min-height: 600px;
   max-height: 900px;
   position: relative;
@@ -13,6 +13,8 @@
   width: 100%;
   height: 100%;
   position: absolute;
+
+  z-index: 0;
 }
 
 .body {
@@ -100,13 +102,17 @@ nav {
 .info-card {
   width: 390px;
   height: 250px;
+
   position: absolute;
   right: 10vw;
   top: 32vh;
 
+  background-color: white;
+
   cursor: pointer;
   overflow: hidden;
   outline: none;
+  z-index: 1;
 
   $animation-duration: 600ms;
   transition: all $animation-duration ease-in-out;
@@ -314,5 +320,159 @@ nav {
       border-radius: 8px;
       border-color: #F1B14A;
     }
+  }
+}
+
+.layout {
+  display: none;
+
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .nav {
+    height: 16%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      width: 85%;
+      height: 50%;
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        width: 70px;
+        height: 70px;
+        position: relative;
+
+        border-radius: 50%;
+
+        img {
+          width: 105%;
+        }
+      }
+
+      .hamburger {
+        width: 40px;
+        height: 30px;
+        position: relative;
+
+        color: black;
+        cursor: pointer;
+        transition: transform 200ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .introduction {
+    width: 250px;
+    height: 300px;
+    margin: 20px auto 0;
+
+    .root-list {
+      transform: translateY(-10px);
+
+      li {
+        font-size: 18px;
+      }
+
+      li:before {
+        content: "";
+        border-color: transparent #5F4CB7;
+        border-style: solid;
+        border-width: 0.45em 0 0.45em 0.55em;
+        display: block;
+        height: 0;
+        width: 0;
+        left: -1.2em;
+        top: 1.05em;
+        position: relative;
+      }
+
+      .i-am-container {
+        display: flex;
+      }
+    }
+  }
+
+  .connect-btn-container {
+    width: 250px;
+    margin: 30px auto 0;
+
+    .connect-btn {
+      width: 160px;
+      height: 40px;
+
+      border-radius: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-weight: bold;
+      color: white;
+      background-color: #5E4CB7;
+
+      cursor: pointer;
+      transition: transform 200ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .footer {
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      width: 95%;
+
+      display: flex;
+      align-items: center;
+      justify-content: start;
+
+      img {
+        width: 30px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.blank-line {
+  height: 8px;
+}
+
+@media screen and (max-width: 750px) {
+  .background {
+    display: none;
+  }
+
+  .layout {
+    display: block;
   }
 }
